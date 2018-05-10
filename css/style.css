@@ -1,0 +1,95 @@
+/* Global text styles */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #2c3e50;
+    line-height: 1.5;
+}
+
+p {
+    margin-top: 1.5em;
+}
+
+h1, h2, h3 {
+    color: #8e44ad;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Menu */
+
+.menu {
+    height: 50px;
+    width: 100%;
+    background: #2c3e50;
+    z-index: 100;
+    position: fixed;
+}
+
+.menu-logo {
+    float: left;
+    vertical-align: middle;
+}
+
+.menu-items {
+    width: 80%;
+    float: right;
+    color: #f1c40f;
+    vertical-align: middle;
+}
+
+.menu-items a {
+    float: left;
+    line-height: 3em;
+    box-sizing: border-box;
+    width: 20%;
+    border-right: 2px solid;
+    border-color: #f1c40f;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu-items a:hover {
+    background: #9b59b6;
+}
+
+/* Hero-unit */
+.hero-unit {
+    background: url("../images/background.png");
+    text-align: center;
+    padding: 150px 10%;
+    /* margin-top: 10px; */
+}
+
+.hero-unit-header {
+    font-size: 4em;
+    font-weight: 700;
+    color: #ecf0f1;
+    line-height: 1.5;
+}
+
+/* Tutorial */
+
+img.icon {
+    width: 100px;
+}
+
+img.main {
+    width: 50px;
+}
