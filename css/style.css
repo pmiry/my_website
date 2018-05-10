@@ -44,14 +44,22 @@ h3 {
 
 .menu-logo {
     float: left;
-    vertical-align: middle;
 }
 
 .menu-items {
     width: 80%;
     float: right;
     color: #f1c40f;
-    vertical-align: middle;
+    list-style-type: none;
+}
+
+.menu-items ul
+{
+    margin: 0;
+}
+
+.menu-items li {
+    display: inline;
 }
 
 .menu-items a {
@@ -84,7 +92,19 @@ h3 {
     line-height: 1.5;
 }
 
-/* Tutorial */
+
+/* Panel */
+.panel
+{
+    text-align: center;
+    border-color: #8e44ad;
+    border-top: 3px solid;
+}
+
+
+
+
+
 
 img.icon {
     width: 100px;
