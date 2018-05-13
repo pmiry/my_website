@@ -11,11 +11,11 @@
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="js/main.js"></script>
 </head>
 
 <body>
-    
     <nav class="menu">
         <div class="menu-logo">
             <a href="index.html">
@@ -25,31 +25,33 @@
         <div class="menu-items">
             <ul>
                 <li>
-                    <a>O języku Nim</a>
+                    <a href="#introduction">O języku Nim</a>
                 </li>
                 <li>
-                    <a>Tutorial</a>
+                    <a href="#tutorial">Tutorial</a>
                 </li>
                 <li>
-                    <a>Quiz</a>
+                    <a href="#quiz">Quiz</a>
                 </li>
                 <li>
-                    <a>Społeczność</a>
+                    <a href="#community">Społeczność</a>
                 </li>
                 <li>
-                    <a>O autorze</a>
+                    <a href="#author">O autorze</a>
                 </li>
             </ul>
+            <i class="material-icons">menu</i>
         </div>
     </nav>
-    
+
     <header class="site-header">
         <article class="hero-unit">
-            <h1 class="hero-unit-header">Język Nim</h1>
+            <h1 class="hero-unit-header">Język programowania Nim</h1>
+            <a href="#introduction" class="hero-unit-button">Odkryj język Nim</a>
         </article>
     </header>
-    
-    <article class="panel">
+
+    <article class="panel" id="introduction">
         <section class="language-introduction">
             <h2>O języku Nim</h2>
             <p>
@@ -62,10 +64,13 @@
         </section>
     </article>
 
-    <article class="panel">
+    <article class="panel" id="tutorial">
         <section class="tutorial">
             <h2>Tutorial</h2>
-            Tematy
+            <p>
+                Zapraszam do zapoznania się z językiem Nim. Każda lekcja zawiera przykłady użycia kodu oraz kilka zadań praktycznych sprawdzających
+                poznane wiadomości.
+            </p>
             <ol>
                 <div class="div-one-third">
                     <li>Instalacja języka</li>
@@ -86,77 +91,120 @@
         </section>
     </article>
 
-    <article class="panel">
+    <article class="panel" id="quiz">
         <section class="quiz">
             <h2>Quiz</h2>
+            <p>
+                Quiz sprawdzający wszystkie wiadomości poznane podczas kursu. Quiz zawiera 20 pytań, na których rozwiązanie masz 10 minut.
+            </p>
             <button>Rozpocznij quiz</button>
         </section>
     </article>
 
 
-    <article class="panel">
+    <article class="panel" id="community">
         <section class="community">
             <h2>Społeczność Nim</h2>
-            <ul class="community-items">
+
+            <ul>
                 <li>
-                    <img class="icon" src="images/nim_logo.png" alt="WWW">
-                    <a href="https://nim-lang.org">nim-lang.org</a>
+                    <div class="div-one-fifth">
+                        <a href="https://nim-lang.org">
+                            <img class="icon" src="images/nim_logo.png" alt="Nim-logo">
+                            <br>Strona domowa języka:
+                            <br>nim-lang.org</a>
+                    </div>
                 </li>
                 <li>
-                    <img class="icon" src="images/forum.png" alt="Forum">
-                    <a href="http://forum.nim-lang.org">forum.nim-lang.org</a>
+                    <div class="div-one-fifth">
+                        <a href="http://forum.nim-lang.org">
+                            <img class="icon" src="images/forum.png" alt="Forum-logo">
+                            <br>Forum użytkowników języka:
+                            <br>forum.nim-lang.org</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="div-one-fifth">
+                        <a href="https://twitter.com/nim_lang">
+                            <img class="icon" src="images/twitter.png" alt="Twitter-logo">
+                            <br>Konto Twitter:
+                            <br>nim_lang</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="div-one-fifth">
+                        <a href="https://www.facebook.com/nimlanguage/">
+                            <img class="icon" src="images/fb.png" alt="Facebook-logo">
+                            <br>Konto Facebook: nimlanguage</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="div-one-fifth">
+                        <a href="https://github.com/nim-lang/Nim">
+                            <img class="icon" src="images/github.png" alt="Github-logo">
+                            <br>Konto Github - kod źródłowy</a>
+                    </div>
                 </li>
             </ul>
+
         </section>
     </article>
 
-    <article class="panel">
-        <div class="div-one-second">
-            <section class="authordescription">
+    <article class="panel" id="author">
+
+        <section class="authordescription">
+            <div class="div-half">
                 <h2>O autorze strony</h2>
-            </section>
-        </div>
-        <div class="div-one-second">
-            <section class="contactform">
+                <img src="images/miry.jpg" alt="Miry-photo" class="avatar">
+                <h3>Paweł Miry</h3>
+                <p>Programista, troubleshooter, magik, szkoleniowiec, Scrum Master</p>
+                <p>Obszary działalności: Python, Perl, JavaScript, Web-development</p>
+                <p>Pracuję dla Ericsson Sp. z o.o, jestem absolwentem i studentem AGH w Krakowie</p>
+            </div>
+        </section>
+
+
+        <section class="contactform">
+            <div class="div-half">
                 <h2>Kontakt</h2>
                 Jeśli chciałbyś się ze mną skontaktować, widzisz błędy na stronie lub chcesz pomóc w jej tworzeniu, proszę o wiadomość.
                 <form action="" method="POST">
-                    <fieldset>
+                    <fieldset class="personal-data-fieldset">
                         <legend>Dane:</legend>
-                        <p>
-                            <label for="name">Imie i nazwisko:</label>
-                            <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required>
-                        </p>
-                        <p>
-                            <label for="mail">E-mail:</label>
-                            <input type="email" id="mail" name="mail" placeholder="Adres e-mail do kontaktu" required>
-                        </p>
+                        <label for="name">Imie i nazwisko:</label>
+                        <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required>
+
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="mail" placeholder="Adres e-mail do kontaktu" required>
                     </fieldset>
                     <fieldset>
                         <legend>Tresc:</legend>
-                        <p>
-                            <label for="content">Treść wiadomości:</label>
-                            <input type="text" id="content" name="content" placeholder="Tresc wiadomości" required>
-                        </p>
+                        <label for="content">Treść wiadomości:</label>
+                        <textarea id="content" name="content" placeholder="Tresc wiadomości" required></textarea>
                     </fieldset>
                     <fieldset>
                         <legend>Walidator:</legend>
-                        <p>
-                            <label for="validator">Wpisz wynik działania (JavaScript):</label>
-                            <input type="number" id="validator" name="validator" placeholder="0-99" required>
-                        </p>
+                        <label for="validator">Wpisz wynik działania (JavaScript):</label>
+                        <input type="number" id="validator" name="validator" placeholder="0-99" required>
                     </fieldset>
                     <button type="submit">Wyślij</button>
                 </form>
-            </section>
-        </div>
+            </div>
+        </section>
+
     </article>
+
+    <a href="#" class="go-top-button">Na górę</a>
 
     <footer class="site-footer">
         <p>
             Autor strony: Paweł Miry, Wydział Zarządzania AGH
         </p>
+        <p>Strona powstała w ramach przygotowania pracy licencjackiej pt.
+            <i>"Przygotowanie interaktywnego tutoriala języka programowania na przykładzie języka Nim"</i>
+        </p>
     </footer>
+    
 </body>
 
 </html>
